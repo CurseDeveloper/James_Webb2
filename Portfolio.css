@@ -1,0 +1,266 @@
+
+body{
+    background-image: url(milky-way-galaxy-space.jpg);
+    background-attachment: fixed;
+    
+}
+
+#container{
+    display:grid;
+    grid-template-areas:
+    'header header header header header header header header header'
+    'menu menu main main main main main destra destra'
+    'menu menu main main main main main destra destra'
+    'footer footer footer footer footer footer footer footer footer';
+    
+}
+
+#header{
+    background-color: rgba(51, 51, 51, 0.765);
+    grid-area: header;
+    height: 180px;
+    margin-bottom: 2%;
+
+}
+
+    #nav-webb-img{
+        width: 150px;
+        float: left;
+        margin: 8px;
+
+    }
+
+        #title{
+            font-family: 'Poppins';
+            font-size: 40px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            margin-top: 8px;
+            
+        }
+            
+            #nav-nasa-img{
+                width: 110px;
+                float: right;
+                margin: 8px;
+
+            }
+
+                .navbar{
+                    margin-top: 26px;
+                }
+
+
+#menu{
+    background-color: rgb(255, 255, 255);
+    grid-area: menu;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    height: 100%;
+    margin: 3% 3% 3% 5%;
+    padding: 15px 30px 30px 10px;
+    
+}
+
+
+#main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main;
+    border-radius: 10px;
+    margin: 1% 2% 2% 2%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+    #main-content{
+        margin-top: 15px;
+    
+    }
+
+#div-img{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+        
+#border-img{
+    border-radius: 30px;
+    width: 75%;
+}
+                
+#div-p1{
+    font-size: 12pt;
+    margin: 0 60px 10px 60px;
+    text-align: center;
+
+}
+
+#div-p2{
+    font-size: 17pt;
+    margin: 0 30px 10px 30px;
+
+}
+
+
+#destra{
+    background-color: rgb(255, 255, 255);
+    grid-area: destra;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    
+    height: 100%;
+    margin: 2% 5% 2% 5%;
+    padding: 20px 10px 10px 10px;
+    
+}
+
+    .col{
+        border-style:ridge;
+        border-radius: 5%;
+        background-color: rgb(51, 51, 51);
+        margin-bottom: 22px;
+        padding-top: 25px;
+        color: rgb(255, 255, 255);
+
+    }
+
+        #destra-img{
+            width: 100%;
+        }
+
+            #destra-text{
+                margin-top: 10px;
+                text-align: left;
+            }
+
+                #destra-border-img{
+                    border: solid;
+                    background-color: rgb(255, 255, 255);
+                }
+
+
+#footer{
+    background-color: rgba(51, 51, 51, 0.765);
+    grid-area: footer;
+    margin-top: 2%;
+    height: 100%;
+    padding: 20px;
+    font-family: 'Poppins';
+    color: rgb(255, 255, 255);
+    
+}
+
+#ul-footer{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#li-footer{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-style: ridge;
+    padding: 0 3px 0 3px;
+    font-size: 50px;
+    
+}
+
+
+
+@media only screen and (max-width: 1145px){
+    
+    #container{
+        display:grid;
+        grid-template-areas:
+        'header header header header header header header header header'
+        'menu menu menu menu menu menu menu menu menu'
+        'main main main main main destra destra destra destra'
+        'main main main main main destra destra destra destra'
+        'footer footer footer footer footer footer footer footer footer';
+    }
+
+    .navbar{
+        margin-top: 30px;
+    }
+
+    #menu{
+        height: 90%;
+        margin: 0 2% 0 1.5%;
+        
+    }
+
+    h2{
+        text-align: center;            
+    }
+
+    #border-img{
+        border-radius: 15px;
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width: 840px){
+    #header{
+        height: 190px;
+    }
+    
+    .navbar{
+        margin-top: 0;
+    }
+
+    #indice{
+        float: right;
+    }
+
+    h4{
+        text-align: right;
+    }
+
+    #div-p1{
+        margin: 0 15px 0px 15px;
+        font-size: 9pt;
+    }
+
+    #div-p2{
+        margin: 0 5px 10px 5px;
+        font-size: 14pt;
+    }
+
+    #border-img{
+        border-radius: 15px;
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width: 568px){
+    #container{
+        display:grid;
+        grid-template-areas:
+        'header header header header header header header header header'
+        'menu menu menu menu menu menu menu menu menu'
+        'main main main main main main main destra destra'
+        'main main main main main main main destra destra'
+        'footer footer footer footer footer footer footer footer footer';
+    }
+    
+    #header{
+        height: 220px;
+    }
+    
+    #border-img{
+        border-radius: 15px;
+        width: 100%;
+    }
+
+}
